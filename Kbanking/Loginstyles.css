@@ -1,0 +1,131 @@
+/*color initializer*/
+:root{
+    --firstColor:#F9F9FF;
+    --secondColor:#DEDCFF;
+    --thirdColor:#2F27CE;
+    --fourthColor:#433BFF;
+}
+* {
+    margin:0;
+    padding:0;
+    margin-top:.5rem;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#klogo{
+    width:calc(5rem + 10vw); 
+    border:none;
+    padding:.2em;
+
+}
+#logo-extender-container{
+    position:absolute;
+    background-color:var(--thirdColor);
+    height:calc(1rem + 11vh + 5vw);
+    animation: 4s intro-extender-logo-container ease-in-out 3s;
+    z-index:998;
+    border-radius:2rem;
+}
+#logo-container{
+    position:absolute;
+    background-color:transparent;
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:calc(1rem + 5vw);
+    width:0;
+    z-index:999;
+}
+.main-container{
+    margin-top:10vh;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width:20em;
+    width:calc(20em + 10vw);
+    min-height:20em;
+}
+#login-header{
+    color:black;
+}
+
+.login-form-container{
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:absolute;
+    height:1rem;
+    overflow-y:hidden;
+    animation-delay: 10s;
+    animation: 3s intro-login 4s;
+    opacity:0;
+    animation-fill-mode: forwards;
+    margin-top:20px;
+
+}
+.login-center-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.type-login-container{
+    border:solid lightgray .2em;
+    border-radius:1em;
+    padding:.3em;
+}
+#username, #password{
+    border-radius:0;
+    border:none;
+}
+
+#submit{
+    border-radius:1em;
+    background-color:var(--fourthColor);
+    border:none;
+    color:white;
+    padding:1em;
+    transition:0.5s;
+}
+
+#submit:hover{
+    background-color:var(--thirdColor);
+}
+
+#forgot{
+    color:#433BFF;
+    cursor:pointer;
+}
+
+@keyframes intro-extender-logo-container{
+    0%{
+        width:0;
+        overflow-x:hidden;
+    }
+    50%{
+
+        width:25rem;
+    }
+    100%{
+        width:0;
+        overflow-x:visible;
+    }
+}
+@keyframes intro-login{
+    0%{
+        opacity:0;
+    }
+    100%{
+        margin-top:4rem;
+        height:25rem;
+        opacity:100;
+    }
+}

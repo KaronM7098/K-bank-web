@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+body{
+    display:flex;
+    flex-direction:row-reverse;
+    float:right;
+}
+li{
+    list-style: none;
+}
+#username-header{
+    color:black;
+}
+.nav-bar{
+    display:flex;
+    flex-direction:column;
+    padding:.2em;
+    width:calc(2rem + 15vw);
+    height:100vh;
+    background-color:black;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-btns{
+    justify-content:space-around;
+}
+.nav-btns > li:hover{
+    padding:5px;
+}
+#header-username{
+    color:black;
+    margin-right:1rem;
+    font-size:calc(2rem + 1vw);
+}
+
+#sign-out{
+    color:white;
+    transition:0.5s;
+    margin-top:20vh;
+    text-decoration: none;
+    margin-left:2vw;
+}
+#sign-out:hover{
+    color:red;
+    cursor:pointer;
+}
+.main-container-scroll{
+    display:flex;
+    flex-direction:column;
+    margin-top:2rem;
+    overflow-y:scroll;
+    visibility:visible;
+    background-color:grey;
+    width:81vw;
+}
+li{
+    display:block;
+}
+#home-btn, #settings-btn, #transfers-btn{
+    transition:0.5s;
+    width:calc(5rem + 3vw);
+    display:block;
+    margin-top:3rem;
+    border-radius:25px;
+    padding:15px;
+}
+
+#home-btn:hover, #settings-btn:hover, #transfers-btn:hover{
+    background-color:lightgrey;
+}
+.main-container-scroll > *{
+    background-color:white;
+    padding:15px;
+}
+
+.checking-container,.savings-container, .transaction-container{
+    margin-top:.3em;
+}
+#total-header{
+    font-size:2rem;
+}
+
+.total-container{
+    margin-top:.3rem;
+}
+button{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}

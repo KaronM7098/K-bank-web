@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Loginstyles.css"/>
+    <title>K Bank</title>
+</head>
+<script src="login.js"></script>
+
+<body>
+    <div class="main-container">
+       <div id="logo-extender-container"></div> <div id="logo-container"><img id="klogo" src="K.png"/></div>
+        <form class="login-form-container" action="Bank.html">
+            <h2 id="login-header">Welcome to K bank!</h2>
+            <div class="login-center-container">
+                <h2 id="login-form-heading">Login</h2>
+                <div class="type-login-container" id="username-container">
+                    <span>Username</span>
+                    <input id="username" type="text" placeholder="Enter Username" required/>
+                </div>
+                <div class="type-login-container" id="password-container">
+                    <span>Password</span>
+                    <input class="type-login-container"id="password" type="password" placeholder="Enter Password"required/>
+                </div>
+            </div>
+            <div class="remember-me-container">
+                <input type="checkbox" id="remember-me-box"/>
+                <span id="remember-me-text"> Remember Me</span>
+            </div>
+            <button id="submit" type="submit">Log In</button>
+            <span id="forgot"><a>Forgot username  or password?</a></span>
+    </form
+    </div>
+</body>
+</html>
